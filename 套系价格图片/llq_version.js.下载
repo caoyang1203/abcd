@@ -1,0 +1,10 @@
+var b_name = navigator.appName;
+var b_version = navigator.appVersion;
+if(b_name == "Microsoft Internet Explorer") {
+    var version = b_version.split(";"); 
+    var trim_version = version[1].replace(/[ ]/g, ""); 
+    if(trim_version == "MSIE7.0" || trim_version == "MSIE8.0" || trim_version == "MSIE9.0") { 
+        // alert("IE浏览器版本过低，请更换浏览器");
+        window.location.href = "./version/upgradeBrowser.html";
+    } 
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.w{
+    width: 1180px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box{
+    .top{
+        img{
+            margin-left: 550px;
+            width: 20%;
+        }
+        a{
+            float: right;
+            margin-top: 25px;
+            margin-right: 15px;
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+    .nav{
+        margin-top: 20px;
+        img{
+            width: 100%;
+        }
+    }
+    .title{
+        ul{
+            margin-left: 150px;
+           li{
+               float: left;
+               margin-left: 70px;
+               a{
+                   color: black;
+               }
+               a:hover{
+                   color: red;
+               }
+           }
+           li:nth-child(1){
+               a{
+                   color: red;
+               }
+           }
+           
+        }
+    }
+}

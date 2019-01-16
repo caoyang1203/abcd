@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "雅黑"
+
+}
+
+.w {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.head {
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  top: 0px;
+  border: 2px solid grey;
+  height: 70px;
+  box-shadow: #2d2d2d;
+}
+
+.head a img {
+  /* height: 20px; */
+  width: 180px;
+  vertical-align: middle;
+}
+
+.head a {
+  margin-left: 60px;
+  line-height: 70px;
+  color: black;
+}
+
+.head a:nth-child(2) {
+  color: red;
+}
+
+.box .top img {
+  margin-left: 500px;
+  width: 20%;
+}
+
+.box .top a {
+  float: right;
+  margin-top: 25px;
+  margin-right: 15px;
+  color: black;
+}
+
+.box .top a:hover {
+  color: red;
+}
+
+.box .title ul {
+  margin-left: 150px;
+}
+
+.box .title ul li {
+  float: left;
+  margin-left: 70px;
+}
+
+.box .title ul li a {
+  color: black;
+}
+
+.box .title ul li a:hover {
+  color: red;
+}
+
+.box .title ul li:nth-child(1) a {
+  color: red;
+}
+
+/* 轮播图 */
+.slider {
+  margin-top: 20px;
+  width: 100%;
+  height: 492px;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider li {
+  position: absolute;
+  display: none;
+}
+
+.slider li:first-child {
+  display: block;
+}
+
+
+.arrow {
+  display: none;
+}
+
+.slider:hover .arrow {
+  display: block;
+}
+
+.arrow-left,
+.arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* 小点按钮样式 */
+.controls {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls a {
+  float: left;
+  width: 50px;
+  height: 4px;
+  border-radius: 30%;
+  margin-left: 10px;
+  background: #fff;
+}
+
+.controls a:first-child {
+  margin-left: 0;
+}
+
+.controls a.active {
+  border-color: pink;
+  background: orange;
+}
+
+.search {
+  position: relative;
+  margin-top: 30px;
+}
+
+.search input {
+  outline-style: none;
+  border: 0px;
+}
+
+
+.search input:first-child {
+  width: 100%;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.search input:last-child {
+  cursor: pointer;
+  width: 20%;
+  height: 50px;
+  background: red;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  letter-spacing: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.nav p {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  height: 100px;
+  width: 400px;
+  line-height: 100px;
+  border-bottom: 1px solid grey;
+}
+
+.nav p span:first-child {
+  color: orangered
+}
+
+.global-dst {
+  margin-top: 40px;
+}
+
+.global-dst .dst-list li {
+  float: left;
+  margin-left: 30px;
+  line-height: 50px;
+}
+
+.global-dst .dst-list {
+
+  margin-top: 10px;
+}
+
+.global-dst .dst-list li a {
+  /* border-bottom: 1px dashed red; */
+  color: grey;
+}
+
+.global-dst .dst-list li a:hover {
+  color: orange;
+}
+
+.global-dst .dst-list ul {
+
+  margin-top: 5px;
+}
+
+.global-dst .dst-list li:first-child {
+
+  border-radius: 30px;
+  margin-left: 0px;
+  font-weight: 700;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 200px;
+  color: #fff;
+  background-color: #2d2d2d;
+}
+
+.banner-mid {
+  margin-top: 70px;
+}
+
+.banner-mid img {
+  width: 100%;
+}
+
+/* //+GLOBAL PACKAGES */
+.tab-pack {
+  margin-top: 80px;
+}
+
+.tab-pack-left li {
+  background: url(套系价格图片/相机.png) no-repeat 25px 0px;
+}
+
+.tab-pack-left li:hover {
+  background: url(套系价格图片/相机2.png) no-repeat 25px 0px;
+}
+
+.tab-pack-left a {
+  display: block;
+  padding-top: 30px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  color: grey;
+}
+
+.tab-pack-left h3 {
+  /* margin-top: 40px; */
+  font-size: 35px;
+  margin-left: 80px;
+}
+
+.tab-pack-left h3 span {
+  color: orangered;
+}
+
+.tab-pack-left a:hover {
+  color: orangered;
+}
+
+.tab-pack-left ul {
+  float: left;
+  margin-left: 150px;
+}
+
+.tab-pack-left li {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+
+.tab-pack-right li {
+  width: 100%;
+}
+
+.tab-pack-right img {
+  float: right;
+  width: 50%;
+}
+
+.tab-pack {
+  display: flex;
+}
+
+.tab-pack-right ul li {
+  display: none;
+}
+
+.tab-pack-right ul li:first-child {
+  display: block;
+}
+
+/* HOT SALES */
+.hotsales {
+  margin-top: 100px;
+}
+
+.hotsales span {
+  color: orangered;
+}
+
+.hotsales h3,
+h4,
+h6 {
+  text-align: center;
+}
+
+
+.hotsales h3 {
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+
+.hotsales h6 {
+  font-size: 15px;
+  color: grey;
+  font-weight: 400;
+}
+
+/* //下面的图片 */
+.hotsales ul li a {
+  display: block;
+  width: 100%;
+}
+
+.hotsales ul li {
+  float: left;
+  width: 30%;
+  height: 255px;
+  margin-top: 30px;
+  margin-left: 10px;
+  /* overflow: hidden; */
+}
+
+.hotsales ul li p {
+  color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.hotsales ul li img,
+.hotsales ul li #qwe {
+  width: 100%;
+  /* animation-direction: alternate; */
+  transition: all 1s;
+}
+
+.hotsales ul li #qwe {
+  overflow: hidden;
+}
+
+.hotsales ul li img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.hotsales h4 {
+  color: #2d2d2d;
+  font-size: 20px;
+  height: 50px;
+  width: 250px;
+  line-height: 50px;
+  border: 1px black solid;
+  margin-top: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  margin: 20px auto;
+}
+
+.hotsales h4:hover {
+  color: white;
+  background: orangered;
+}
+
+.loveyou img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+/* 尾部 */
+.end {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.end img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.end-black {
+  margin-top: 50px;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+}
+
+.end-black a {
+  margin-top: 40px;
+  display: inline-block;
+  border: 1px solid orangered;
+  height: 30px;
+  line-height: 30px;
+  width: 90px;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.huidao {
+  display: none;
+  line-height:40px;
+  text-align: center;
+  width: 40px;
+  border: 1px solid grey;
+  height: 40px;
+  background-color: #fff;
+  position: fixed;
+  right: 60px;
+  bottom: 120px;
+  cursor: pointer;
+}
+.huidao a {
+  color: grey;
+}
+
